@@ -23,6 +23,7 @@ body {
     &__logoBlock {
         display: flex;
         align-items: center;
+        cursor: pointer;
         img {
             height: 38px;
             margin-right: 17px;
@@ -55,7 +56,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 150px;
+        min-width: 150px;
         height: 50px;
         background: #FE5F1E;
         border-radius: 30px;
@@ -83,5 +84,73 @@ body {
         color: #FFFFFF;
         margin-right: 23px;
         margin-left: 6px;
+    }
+}
+
+.mainContent {
+    .categories {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 48px;
+        margin-left: 67px;
+        margin-top: 40px;
+        &__list {
+            display: flex;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            background: #F9F9F9;
+            border-radius: 30px;
+            color: #2C2C2C;
+            height: 46px;
+            padding: 0 20px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.015em;
+            margin-right: 9px;
+            cursor: pointer;
+            transition: ease-in-out 0.2s;
+            &-selected {
+                background: #282828;
+                color: #FFFFFF;
+            }
+            &:hover {
+                background: #282828;
+                color: #FFFFFF;
+            }
+        }
+
+        &__sortingBlock {
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 7px;
+            }
+        }
+
+        &__mainText {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.015em;
+            color: #2C2C2C;
+            margin-right: 8px;
+        }
+
+        &__secondaryText {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.015em;
+            color: #FE5F1E;
+            border-bottom: 1px dashed #FE5F1E;
+            cursor: pointer;
+        }
     }
 }
